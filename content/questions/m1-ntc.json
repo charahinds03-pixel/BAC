@@ -1,0 +1,204 @@
+[
+  {
+    "id": "M1-NTC-0001",
+    "status": "in_review",
+    "module": 1,
+    "topicId": "1.1",
+    "treeId": "S1",
+    "car": "A",
+    "difficulty": -1,
+    "paper": "P01",
+    "country": "any",
+    "calculator": false,
+    "stem": "Simplify the fraction \\(\\frac{18}{24}\\).",
+    "format": "mcq",
+    "answerForm": "simplest",
+    "choices": [
+      { "id": "a", "text": "\\(\\frac{2}{3}\\)", "misconceptionId": "FRAC-SIMPLIFY-UNEQUAL" },
+      { "id": "b", "text": "\\(\\frac{3}{4}\\)", "correct": true },
+      { "id": "c", "text": "\\(\\frac{6}{8}\\)", "misconceptionId": "FRAC-NOT-LOWEST" },
+      { "id": "d", "text": "\\(\\frac{9}{12}\\)", "misconceptionId": "FRAC-NOT-LOWEST" }
+    ],
+    "workedSolution": [
+      "The HCF of 18 and 24 is 6.",
+      "\\(18 \\div 6 = 3\\) and \\(24 \\div 6 = 4\\).",
+      "So \\(\\frac{18}{24} = \\frac{3}{4}\\)."
+    ],
+    "hints": [
+      "Is there a number that divides both 18 and 24 exactly?",
+      "Find the HCF of 18 and 24, then divide both.",
+      "The HCF is 6. What is \\(18 \\div 6\\)?"
+    ],
+    "strategy": "hcf-simplify",
+    "source": "phase-0-mvp",
+    "legacyId": "fractions/f1",
+    "version": 1
+  },
+  {
+    "id": "M1-NTC-0002",
+    "status": "in_review",
+    "module": 1,
+    "topicId": "1.1",
+    "treeId": "S1",
+    "car": "A",
+    "difficulty": 0,
+    "paper": "P01",
+    "country": "any",
+    "calculator": false,
+    "stem": "Calculate \\(\\frac{1}{2} + \\frac{1}{3}\\).",
+    "format": "mcq",
+    "choices": [
+      { "id": "a", "text": "\\(\\frac{2}{5}\\)", "misconceptionId": "FRAC-ADD-ACROSS" },
+      { "id": "b", "text": "\\(\\frac{2}{6}\\)", "misconceptionId": "FRAC-ADD-NUM-MULT-DEN" },
+      { "id": "c", "text": "\\(\\frac{5}{6}\\)", "correct": true },
+      { "id": "d", "text": "\\(\\frac{3}{5}\\)", "misconceptionId": "NEEDS-DIAGNOSIS" }
+    ],
+    "workedSolution": [
+      "The LCM of 2 and 3 is 6, so use 6 as the common denominator.",
+      "\\(\\frac{1}{2} = \\frac{3}{6}\\) and \\(\\frac{1}{3} = \\frac{2}{6}\\).",
+      "\\(\\frac{3}{6} + \\frac{2}{6} = \\frac{5}{6}\\)."
+    ],
+    "hints": [
+      "Can you add halves and thirds straight away, or do the pieces need to be the same size first?",
+      "Find a common denominator first.",
+      "Both 2 and 3 go into 6. Write \\(\\frac{1}{2}\\) as sixths."
+    ],
+    "strategy": "common-denominator",
+    "source": "phase-0-mvp",
+    "legacyId": "fractions/f2",
+    "version": 1
+  },
+  {
+    "id": "M1-NTC-0003",
+    "status": "in_review",
+    "module": 1,
+    "topicId": "1.1",
+    "treeId": "S1",
+    "car": "A",
+    "difficulty": -1,
+    "paper": "P01",
+    "country": "any",
+    "calculator": false,
+    "stem": "What is \\(\\frac{3}{4}\\) of 40?",
+    "format": "mcq",
+    "choices": [
+      { "id": "a", "text": "10", "misconceptionId": "FRAC-OF-UNIT-ONLY" },
+      { "id": "b", "text": "20", "misconceptionId": "NEEDS-DIAGNOSIS" },
+      { "id": "c", "text": "25", "misconceptionId": "NEEDS-DIAGNOSIS" },
+      { "id": "d", "text": "30", "correct": true }
+    ],
+    "workedSolution": [
+      "\\(\\frac{1}{4}\\) of 40 is \\(40 \\div 4 = 10\\).",
+      "\\(\\frac{3}{4}\\) of 40 is \\(3 \\times 10 = 30\\)."
+    ],
+    "hints": [
+      "What does \"of\" mean when you take a fraction of a number?",
+      "Multiply \\(40 \\times 3\\), then divide by 4.",
+      "\\(40 \\times 3 = 120\\). Now divide 120 by 4."
+    ],
+    "strategy": "fraction-of-amount",
+    "source": "phase-0-mvp",
+    "legacyId": "fractions/f3",
+    "version": 1
+  },
+  {
+    "id": "M1-NTC-0004",
+    "status": "in_review",
+    "module": 1,
+    "topicId": "1.1",
+    "treeId": "S1",
+    "car": "C",
+    "difficulty": 0,
+    "paper": "P01",
+    "country": "any",
+    "calculator": false,
+    "stem": "Arrange in ascending order: \\(\\frac{3}{4}\\), \\(\\frac{2}{3}\\), \\(\\frac{5}{8}\\)",
+    "format": "mcq",
+    "choices": [
+      { "id": "a", "text": "\\(\\frac{5}{8} < \\frac{2}{3} < \\frac{3}{4}\\)", "correct": true },
+      { "id": "b", "text": "\\(\\frac{2}{3} < \\frac{5}{8} < \\frac{3}{4}\\)", "misconceptionId": "FRAC-DEC-TRUNCATED" },
+      { "id": "c", "text": "\\(\\frac{3}{4} < \\frac{2}{3} < \\frac{5}{8}\\)", "misconceptionId": "ORD-REVERSED" },
+      { "id": "d", "text": "\\(\\frac{5}{8} < \\frac{3}{4} < \\frac{2}{3}\\)", "misconceptionId": "FRAC-BIGGER-DEN-SMALLER" }
+    ],
+    "workedSolution": [
+      "Use 24 as the common denominator.",
+      "\\(\\frac{3}{4} = \\frac{18}{24}\\), \\(\\frac{2}{3} = \\frac{16}{24}\\) and \\(\\frac{5}{8} = \\frac{15}{24}\\).",
+      "\\(\\frac{15}{24} < \\frac{16}{24} < \\frac{18}{24}\\), so \\(\\frac{5}{8} < \\frac{2}{3} < \\frac{3}{4}\\)."
+    ],
+    "hints": [
+      "Fractions are easier to compare when they are cut into the same size pieces.",
+      "Convert to a common denominator (24) to compare easily.",
+      "\\(\\frac{3}{4} = \\frac{18}{24}\\). Write \\(\\frac{2}{3}\\) and \\(\\frac{5}{8}\\) as twenty-fourths too."
+    ],
+    "strategy": "common-denominator",
+    "source": "phase-0-mvp",
+    "legacyId": "fractions/f4",
+    "version": 1
+  },
+  {
+    "id": "M1-NTC-0005",
+    "status": "in_review",
+    "module": 1,
+    "topicId": "1.1",
+    "treeId": "S1",
+    "car": "A",
+    "difficulty": 0,
+    "paper": "P01",
+    "country": "any",
+    "calculator": false,
+    "stem": "Divide \\(\\frac{2}{3} \\div 4\\).",
+    "format": "mcq",
+    "choices": [
+      { "id": "a", "text": "\\(\\frac{8}{3}\\)", "misconceptionId": "FRAC-DIV-AS-MULT" },
+      { "id": "b", "text": "\\(\\frac{1}{6}\\)", "correct": true },
+      { "id": "c", "text": "6", "misconceptionId": "DIV-ORDER-REVERSED" },
+      { "id": "d", "text": "\\(\\frac{2}{12}\\)", "misconceptionId": "FRAC-NOT-LOWEST" }
+    ],
+    "workedSolution": [
+      "Dividing by 4 is the same as multiplying by \\(\\frac{1}{4}\\).",
+      "\\(\\frac{2}{3} \\times \\frac{1}{4} = \\frac{2}{12}\\).",
+      "\\(\\frac{2}{12} = \\frac{1}{6}\\)."
+    ],
+    "hints": [
+      "If you share \\(\\frac{2}{3}\\) among 4 people, will each share be bigger or smaller than \\(\\frac{2}{3}\\)?",
+      "Dividing by 4 is the same as multiplying by \\(\\frac{1}{4}\\).",
+      "Work out \\(\\frac{2}{3} \\times \\frac{1}{4}\\): multiply the tops, then multiply the bottoms."
+    ],
+    "strategy": "multiply-by-reciprocal",
+    "source": "phase-0-mvp",
+    "legacyId": "fractions/f5",
+    "version": 1
+  },
+  {
+    "id": "M1-NTC-0006",
+    "status": "in_review",
+    "module": 1,
+    "topicId": "1.1",
+    "treeId": "R2",
+    "car": "A",
+    "difficulty": 0,
+    "paper": "P01",
+    "country": "BB",
+    "calculator": false,
+    "stem": "Kemar saves BDS $45 a week from his weekend job at the Oistins fish fry. How many weeks will it take him to save BDS $540?",
+    "format": "mcq",
+    "choices": [
+      { "id": "a", "text": "12", "correct": true },
+      { "id": "b", "text": "495", "misconceptionId": "OP-SUB-FOR-DIV" },
+      { "id": "c", "text": "585", "misconceptionId": "OP-ADD-FOR-DIV" },
+      { "id": "d", "text": "24 300", "misconceptionId": "OP-MUL-FOR-DIV" }
+    ],
+    "workedSolution": [
+      "Weeks = total saved ÷ amount per week",
+      "\\(540 \\div 45 = 12\\)"
+    ],
+    "hints": [
+      "What does each week add to his savings?",
+      "How many groups of 45 fit into 540?",
+      "Start with \\(45 \\times 10 = 450\\). How much is left?"
+    ],
+    "strategy": "division-as-grouping",
+    "source": "brief-example",
+    "version": 1
+  }
+]

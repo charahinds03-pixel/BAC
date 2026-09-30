@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "source": "Ported from charahinds03-pixel/MVP, curriculumData.js (TOPICS). MVP tiers 0 to 3 map to root, stem, branch and node.",
+  "nodes": [
+    {
+      "id": "R1",
+      "legacyId": "number-types",
+      "title": "Types of Numbers",
+      "tier": "root",
+      "prerequisites": [],
+      "description": "Natural numbers, integers, rationals, and irrationals.",
+      "syllabusRefs": ["1.1"]
+    },
+    {
+      "id": "R2",
+      "legacyId": "arithmetic-ops",
+      "title": "The Four Operations",
+      "tier": "root",
+      "prerequisites": [],
+      "description": "Addition, subtraction, multiplication, division and the order they happen (BODMAS).",
+      "syllabusRefs": ["1.1"]
+    },
+    {
+      "id": "S1",
+      "legacyId": "fractions",
+      "title": "Fractions",
+      "tier": "stem",
+      "prerequisites": ["R1", "R2"],
+      "description": "Equivalent fractions, simplifying, adding, subtracting, multiplying and dividing fractions.",
+      "syllabusRefs": ["1.1"]
+    },
+    {
+      "id": "S2",
+      "legacyId": "decimals-percent",
+      "title": "Decimals and Percentages",
+      "tier": "stem",
+      "prerequisites": ["S1"],
+      "description": "Converting between fractions, decimals and percentages. Percentage increase and decrease.",
+      "syllabusRefs": ["1.1", "1.2"]
+    },
+    {
+      "id": "S3",
+      "legacyId": "directed-numbers",
+      "title": "Directed Numbers",
+      "tier": "stem",
+      "prerequisites": ["R2"],
+      "description": "Working with positive and negative numbers on the number line.",
+      "syllabusRefs": ["1.1"]
+    },
+    {
+      "id": "B1",
+      "legacyId": "algebra-basics",
+      "title": "Introduction to Algebra",
+      "tier": "branch",
+      "prerequisites": ["S3", "S1"],
+      "description": "Variables, expressions, simplifying, substitution.",
+      "syllabusRefs": ["1.5"]
+    },
+    {
+      "id": "B2",
+      "legacyId": "linear-equations",
+      "title": "Linear Equations",
+      "tier": "branch",
+      "prerequisites": ["B1"],
+      "description": "Solving one and two-step equations. Forming equations from word problems.",
+      "syllabusRefs": ["1.5"]
+    },
+    {
+      "id": "B3",
+      "legacyId": "geometry-basics",
+      "title": "Angles and Lines",
+      "tier": "branch",
+      "prerequisites": ["R2"],
+      "description": "Types of angles, parallel lines, angle rules. Proof.",
+      "syllabusRefs": []
+    },
+    {
+      "id": "N1",
+      "legacyId": "simultaneous-equations",
+      "title": "Simultaneous Equations",
+      "tier": "node",
+      "prerequisites": ["B2"],
+      "description": "Substitution and elimination methods. Graphical interpretation.",
+      "syllabusRefs": []
+    },
+    {
+      "id": "N2",
+      "legacyId": "quadratics",
+      "title": "Quadratic Expressions and Equations",
+      "tier": "node",
+      "prerequisites": ["B1", "B2"],
+      "description": "Factorising, completing the square, using the quadratic formula.",
+      "syllabusRefs": []
+    },
+    {
+      "id": "N3",
+      "legacyId": "trigonometry",
+      "title": "Trigonometry",
+      "tier": "node",
+      "prerequisites": ["B3", "S2"],
+      "description": "SOH-CAH-TOA. Sine and cosine rules. Bearings.",
+      "syllabusRefs": []
+    }
+  ]
+}

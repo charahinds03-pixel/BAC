@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "misconceptions": [
+    {
+      "id": "OP-SUB-FOR-DIV",
+      "status": "in_review",
+      "title": "Subtracts instead of dividing",
+      "description": "Takes one amount away from the other when the question asks how many groups fit into a total.",
+      "feedback": "Close. You took one amount away from the other once. The question asks how many times the smaller amount fits into the total, and that is a division."
+    },
+    {
+      "id": "OP-ADD-FOR-DIV",
+      "status": "in_review",
+      "title": "Adds instead of dividing",
+      "description": "Adds the two amounts when the question asks how many groups fit into a total.",
+      "feedback": "Not quite. You added the two amounts, so your answer is bigger than the total. Ask how many groups of the smaller amount make the total. That is a division."
+    },
+    {
+      "id": "OP-MUL-FOR-DIV",
+      "status": "in_review",
+      "title": "Multiplies instead of dividing",
+      "description": "Multiplies the two amounts when the question asks how many groups fit into a total.",
+      "feedback": "Not quite. Multiplying made your answer far bigger than the total. When you want how many groups fit into a total, divide the total by the size of one group."
+    },
+    {
+      "id": "FRAC-SIMPLIFY-UNEQUAL",
+      "status": "in_review",
+      "title": "Divides top and bottom by different numbers",
+      "description": "Simplifies by dividing the numerator and the denominator by different numbers, which changes the value of the fraction.",
+      "feedback": "Close. You divided the top and the bottom by different numbers, and that changes the fraction's value. Divide both by the same common factor."
+    },
+    {
+      "id": "FRAC-NOT-LOWEST",
+      "status": "in_review",
+      "title": "Stops before lowest terms",
+      "description": "Divides by a common factor that is not the HCF, so the fraction is equivalent but not fully simplified.",
+      "feedback": "Right value, not finished. The top and the bottom still share a factor. Divide both by their highest common factor to reach lowest terms."
+    },
+    {
+      "id": "FRAC-ADD-ACROSS",
+      "status": "in_review",
+      "title": "Adds tops and adds bottoms",
+      "description": "Adds numerators together and denominators together, so 1/2 + 1/3 becomes 2/5.",
+      "feedback": "Close. You added the tops and added the bottoms. Halves and thirds are different sized pieces, so change them to the same denominator before you add."
+    },
+    {
+      "id": "FRAC-ADD-NUM-MULT-DEN",
+      "status": "in_review",
+      "title": "Adds tops, multiplies bottoms",
+      "description": "Multiplies the denominators to get a common denominator but adds the numerators unchanged, so 1/2 + 1/3 becomes 2/6.",
+      "feedback": "Close. You found a common denominator but left the tops as they were. When the bottom of a fraction is multiplied, the top must be multiplied by the same number."
+    },
+    {
+      "id": "FRAC-OF-UNIT-ONLY",
+      "status": "in_review",
+      "title": "Finds one part and stops",
+      "description": "Divides by the denominator to find one part but does not multiply by the numerator.",
+      "feedback": "Halfway there. You found one part. The question asks for more than one part, so multiply by the top number as well."
+    },
+    {
+      "id": "ORD-REVERSED",
+      "status": "in_review",
+      "title": "Orders the wrong way round",
+      "description": "Puts the values in descending order when the question asks for ascending, or the reverse.",
+      "feedback": "Your order is right but reversed. Ascending means smallest first, climbing up."
+    },
+    {
+      "id": "FRAC-BIGGER-DEN-SMALLER",
+      "status": "in_review",
+      "title": "Judges size by the denominator alone",
+      "description": "Treats the fraction with the bigger denominator as always the smaller one, ignoring the numerator.",
+      "feedback": "Close. A bigger denominator means smaller pieces, but the top number counts how many pieces you have. Compare the fractions over a common denominator."
+    },
+    {
+      "id": "FRAC-DEC-TRUNCATED",
+      "status": "in_review",
+      "title": "Cuts a recurring decimal short",
+      "description": "Converts a fraction such as 2/3 to 0.6 instead of 0.666..., which makes it look smaller than it is.",
+      "feedback": "Close. One of these fractions is a recurring decimal, and cutting it short made it look smaller than it is. Keep more decimal places, or compare over a common denominator."
+    },
+    {
+      "id": "FRAC-DIV-AS-MULT",
+      "status": "in_review",
+      "title": "Multiplies instead of dividing a fraction",
+      "description": "Multiplies the fraction by the whole number when the question asks to divide.",
+      "feedback": "Not quite. You multiplied instead of dividing. Sharing a fraction into more parts makes each part smaller, not bigger."
+    },
+    {
+      "id": "DIV-ORDER-REVERSED",
+      "status": "in_review",
+      "title": "Divides the wrong way round",
+      "description": "Divides the second number by the first, for example works out 4 ÷ 2/3 instead of 2/3 ÷ 4.",
+      "feedback": "Close. You divided the second number by the first. Order matters in division: the first number is the one being shared out."
+    },
+    {
+      "id": "NEEDS-DIAGNOSIS",
+      "status": "in_review",
+      "title": "No misconception named yet",
+      "description": "Placeholder for a distractor nobody has explained yet. Name the error behind it or replace the distractor.",
+      "feedback": "Not quite. Open a hint and try again."
+    }
+  ]
+}
