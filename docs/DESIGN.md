@@ -60,7 +60,7 @@ Type scale, in rem at a 16px root: 0.875 (captions only, never question text), 1
 
 ## Math notation
 
-Write math in content between `\(` and `\)`, for example `\(\frac{18}{24}\)`. The `$` sign is kept free for money (BDS $45, EC $120). KaTeX renders the math; plain text stays plain.
+Write math in content between `\(` and `\)`, for example `\(\frac{18}{24}\)`. The `$` sign is kept free for money (BDS $45, EC $120). KaTeX renders the math; plain text stays plain. Fractions are set full size (KaTeX's \dfrac), as on a printed paper, because small inline fractions are hard to read on a phone.
 
 Follow CXC print conventions: stacked fractions, × and ÷ rather than * and /, a space as the thousands separator (24 300), a decimal point, and units after a space (45 cm).
 
@@ -88,8 +88,8 @@ These are the components on /styleguide. Screens reuse them rather than inventin
 | Button | Primary (ink fill, paper text), secondary (ink-soft outline), quiet (text only) | 44px tall minimum. One primary per screen. Labels are verbs: "Check", "Next question". |
 | Math | Renders `\( \)` segments with KaTeX inside plain text | Never render untrusted HTML. KaTeX errors fall back to the raw text. |
 | Question sheet | The stem on paper-raised, with a thin rule above and below | Stem at 1.125rem. Country and paper labels in ink-soft. |
-| Choice list | Paper 01 options as ruled rows labelled A to D | The whole row is the target. Selected rows get an ink border. After checking, the right row gets a sea tick and a chosen wrong row gets a mace strike. |
-| Answer box | Free response on paper-raised with an ink-soft border | Numeric keyboard on phones (inputmode="decimal"). Accepts 1/2, 0.5, 24 300 and BDS $540. |
+| Choice list | Paper 01 options as ruled rows labelled A to D | The whole row is the target. Selected rows get an ink border. After checking, a right answer gets a sea tick and a chosen wrong row gets a mace cross. A wrong answer never reveals the right row. |
+| Answer box | Free response on paper-raised with an ink-soft border | Use the decimal number pad only when the answer cannot be a fraction, because it has no / key. Accepts 1/2, 0.5, 24 300 and BDS $540. MathLive replaces it later. |
 | Margin note | The teacher's mark beside the work | A mace or sea rule on the left edge, feedback in words. Written for the specific misconception. |
 | Hint ladder | Four rungs: nudge, strategy, one worked step, full worked example | Rungs open one at a time. The full example stays locked until two attempts. |
 | Worked solution | Numbered steps, ruled like an exercise book | One step per line. |

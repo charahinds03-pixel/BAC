@@ -82,3 +82,26 @@ Otherwise ordinary phrases like "one step at a time" would be blocked. The numbe
 
 **The engine uses epoch milliseconds for time.**
 Plain numbers are easy to test and to store in Firestore.
+
+## 2026-09-30: App shell and style guide (Claude Code)
+
+**Plain CSS with custom properties, no Tailwind and no router.**
+The brief asked for a minimal app. Tokens live in src/styles/tokens.css, components in src/styles/components.css. /styleguide is picked by a two-line path check in App.tsx. If AI Studio adds Tailwind, docs/DESIGN.md gives the snippet that wipes the stock palette.
+
+**Fonts are self-hosted with @fontsource, and all three heading candidates ship for now.**
+Self-hosting works offline and sends nothing to a third party. The style guide has a switch for Fraunces, Newsreader and Literata. Once Chara picks one, drop the other two imports from src/main.tsx.
+
+**Fractions render full size (\dfrac), not KaTeX's small inline size.**
+At 360px the inline fractions were too small to read comfortably. Full-size fractions match a printed CXC paper.
+
+**The answer box uses the text keyboard.**
+The phone's decimal number pad has no / key, so students could not type 3/4. MathLive will replace the plain box later.
+
+**The style guide shows in_review items; students never do.**
+studentBank (approved only) and reviewBank (approved and in_review) are separate loaders in src/data/content.ts. Right now studentBank is empty, which is correct until Chara approves items.
+
+**Screens code belongs to AI Studio after import, but the style guide comes first.**
+src/components, src/styles and src/styleguide are screen code. Any new or changed component goes on /styleguide for Chara's approval before a screen uses it, as .agents/rules/design.md says.
+
+**The first bundle is about 165 kB gzipped, most of it KaTeX.**
+Worth watching on mobile data. Loading KaTeX only on question screens is an easy later win.

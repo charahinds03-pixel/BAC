@@ -1,0 +1,95 @@
+/*
+  BAC design tokens. These mirror docs/DESIGN.md exactly.
+  Components use these variables and never raw colour values.
+*/
+
+:root {
+  /* Colour: day */
+  --paper: #f7f2e8;
+  --paper-raised: #fffcf6;
+  --ink: #1b2a4a;
+  --ink-soft: #4a5670;
+  --rule: #dcd2c0;
+  --sea: #1f7a6d;
+  --mace: #b5432e;
+  --gold: #c8961e;
+
+  /* Derived tints, only ever mixed from the tokens above */
+  --margin-line: color-mix(in srgb, var(--mace) 40%, var(--paper-raised));
+  --sea-wash: color-mix(in srgb, var(--sea) 8%, var(--paper-raised));
+  --mace-wash: color-mix(in srgb, var(--mace) 7%, var(--paper-raised));
+
+  /* Type */
+  --font-heading: 'Fraunces', Georgia, 'Times New Roman', serif;
+  --font-body: 'Atkinson Hyperlegible', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --text-caption: 0.875rem;
+  --text-body: 1rem;
+  --text-stem: 1.125rem;
+  --text-title: 1.375rem;
+  --text-display: 1.75rem;
+  --leading-body: 1.5;
+  --leading-heading: 1.2;
+
+  /* Space: an 8px grid */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+
+  /* Shape */
+  --radius-control: 4px;
+  --radius-sheet: 6px;
+  --line: 1px;
+
+  /* Layout */
+  --touch: 44px;
+  --measure: 40rem;
+  --gutter: 16px;
+  --margin-width: 40px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --duration-fast: 150ms;
+  --duration: 200ms;
+  --duration-slow: 250ms;
+
+  color-scheme: light;
+}
+
+/* Night study mode: deep navy paper and warm cream ink, never pure black. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='day']) {
+    --paper: #13203a;
+    --paper-raised: #1a2a48;
+    --ink: #f3ebda;
+    --ink-soft: #bdb5a4;
+    --rule: #34435f;
+    --sea: #6cc2b2;
+    --mace: #ee8a70;
+    --gold: #e2b24c;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='night'] {
+  --paper: #13203a;
+  --paper-raised: #1a2a48;
+  --ink: #f3ebda;
+  --ink-soft: #bdb5a4;
+  --rule: #34435f;
+  --sea: #6cc2b2;
+  --mace: #ee8a70;
+  --gold: #e2b24c;
+  color-scheme: dark;
+}
+
+/* Heading candidates. Test all three on a cheap Android phone and keep one. */
+:root[data-heading='newsreader'] {
+  --font-heading: 'Newsreader', Georgia, 'Times New Roman', serif;
+}
+
+:root[data-heading='literata'] {
+  --font-heading: 'Literata', Georgia, 'Times New Roman', serif;
+}

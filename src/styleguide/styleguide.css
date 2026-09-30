@@ -1,0 +1,173 @@
+/* Layout for the /styleguide screen only. Components live in src/styles/components.css. */
+
+.sg-header > * + * {
+  margin-top: var(--space-2);
+}
+
+.sg-toc {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: var(--space-3);
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: var(--line) solid var(--rule);
+}
+
+.sg-toc li {
+  border-bottom: var(--line) solid var(--rule);
+}
+
+.sg-toc a {
+  display: flex;
+  align-items: center;
+  min-height: var(--touch);
+}
+
+.sg-section {
+  margin-top: var(--space-6);
+  padding-top: var(--space-3);
+  border-top: 2px solid var(--ink);
+  scroll-margin-top: var(--space-3);
+}
+
+.sg-section > * + * {
+  margin-top: var(--space-3);
+}
+
+.sg-sub {
+  margin-top: var(--space-5) !important;
+  font-size: var(--text-body);
+}
+
+.sg-controls {
+  display: grid;
+  gap: var(--space-3);
+  margin-top: var(--space-4) !important;
+}
+
+.segmented {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+
+.segmented legend {
+  margin-bottom: var(--space-1);
+  padding: 0;
+  font-weight: 700;
+}
+
+.segmented__options {
+  display: flex;
+  border: var(--line) solid var(--ink-soft);
+  border-radius: var(--radius-control);
+  overflow: hidden;
+}
+
+.segmented label {
+  position: relative;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--touch);
+  padding: 0 var(--space-2);
+  cursor: pointer;
+  text-align: center;
+}
+
+.segmented label + label {
+  border-left: var(--line) solid var(--ink-soft);
+}
+
+.segmented input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.segmented label:has(input:checked) {
+  background: var(--ink);
+  color: var(--paper);
+  font-weight: 700;
+}
+
+.segmented label:has(input:focus-visible) {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+.swatches {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: var(--line) solid var(--rule);
+}
+
+.swatch {
+  display: grid;
+  grid-template-columns: var(--touch) 1fr;
+  gap: var(--space-3);
+  align-items: center;
+  padding: var(--space-2) 0;
+  border-bottom: var(--line) solid var(--rule);
+}
+
+.swatch__chip {
+  width: var(--touch);
+  height: var(--touch);
+  border: var(--line) solid var(--ink-soft);
+  border-radius: var(--radius-control);
+}
+
+.swatch__name {
+  font-weight: 700;
+}
+
+.swatch__value {
+  font-family: ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  font-size: var(--text-caption);
+  color: var(--ink-soft);
+}
+
+.sg-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.sg-spacing {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sg-spacing li {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 28px;
+}
+
+.sg-spacing span:last-child {
+  height: 8px;
+  background: var(--ink-soft);
+}
+
+.sg-engine {
+  color: var(--ink-soft);
+  font-size: var(--text-caption);
+  font-variant-numeric: tabular-nums;
+}
+
+.sg-type > * + * {
+  margin-top: var(--space-3);
+}
+
+.sg-stack > * + * {
+  margin-top: var(--space-3);
+}
