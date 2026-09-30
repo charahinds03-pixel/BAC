@@ -94,7 +94,7 @@ function checkText(
   warn: (m: string) => void,
 ): void {
   if (!mathDelimitersBalanced(text)) error(`${label} has unbalanced \\( and \\) math delimiters`)
-  if (text.includes('—')) warn(`${label} contains an em dash`)
+  if (text.includes('\u2014')) warn(`${label} contains an em dash`)
   for (const match of text.matchAll(/(BDS|BBD|EC|XCD)?\s?\$/gi)) {
     const prefix = match[1]?.toUpperCase()
     if (!prefix) warn(`${label} has a bare $ with no BDS or EC prefix`)
@@ -425,7 +425,7 @@ export function validateMisconceptions(raw: unknown): Issue[] {
       if (!isText(entry[field])) entryIssue('error', `${field} is missing`)
     }
     if (isText(entry.feedback)) {
-      if (entry.feedback.includes('—')) entryIssue('warning', 'feedback contains an em dash')
+      if (entry.feedback.includes('\u2014')) entryIssue('warning', 'feedback contains an em dash')
       if (entry.feedback.includes('!')) entryIssue('warning', 'feedback uses an exclamation mark')
     }
   }

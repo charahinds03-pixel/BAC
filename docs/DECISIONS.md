@@ -62,3 +62,23 @@ Its distractor 2/12 equals the key 1/6, and the stem does not ask for lowest ter
 
 **Validation logic lives in src/engine/content.ts.**
 The app's loader and the command-line validator share it, so a rule can never differ between the two. The script adds a KaTeX render check on top. /scripts belongs to Claude Code.
+
+## 2026-09-30: Engine (Claude Code)
+
+**Answers are checked by our own exact-number checker, not a library, for now.**
+The brief names "a math-equivalence library". For Module 1 numbers (fractions, decimals, percentages, money, standard form), exact fractions in about 150 lines do the job with no dependency and full tests. Algebra answers (section 1.5) will need a real algebra engine. The likely pick is @cortex-js/compute-engine, from the team behind MathLive. Ask Chara before adding it.
+
+**K shrinks as 0.4 × 10 / (10 + answers), never below 0.1.**
+It matches the brief's "start near 0.4 and shrink" with one number to tune (the 10). A new student needs 7 straight correct medium answers to master a root, and 5 for any other tier.
+
+**The item picker works in a fixed order: C-A-R balance, then strategy, then a 70% chance.**
+It is easy to explain and to test. The C-A-R balance looks at the last 10 items. 70% is the usual "desirable difficulty" target: hard enough to learn from, easy enough to keep going.
+
+**A typed answer on a multiple-choice item is also checked against every distractor.**
+So typing 2/5 for 1/2 + 1/3 gets the same misconception feedback as tapping it. This lets one bank serve Paper 01 taps and free-response practice.
+
+**The tutor guard blocks any digit that is not in the question, but checks number words only against the answer.**
+Otherwise ordinary phrases like "one step at a time" would be blocked. The numbers in a fraction's top and bottom count as being in the question.
+
+**The engine uses epoch milliseconds for time.**
+Plain numbers are easy to test and to store in Firestore.
